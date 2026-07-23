@@ -1,0 +1,5 @@
+# .gitignore for GitHub Pages
+dist/
+node_modules/
+.DS_Store
+UsingBlog.md

@@ -1,0 +1,33 @@
+---
+layout: ../../layouts/Layout.astro
+title: Intro to Blog
+---
+# An Introduction to the Blog
+
+***Date: 22 July 2026***
+
+## An Introduction
+Hello there, welcome to my blog!
+
+## Question: What is the point of this blog?
+The point of this blog is to share work that I have. Half portfolio, half discussion place for what work I have done.
+
+Technically, this exact blog is an example of some work that I have done, though this isn't a very complicated setup. Currently, we are running this blog on a framework of Astro, using it as a basic blog post. The index.astro (the entry point) allows us to navigate to the directory.
+
+I chose Astro for a few reasons. First, it's basic, very little setup was required for this to work. Two, it's flexible. Using either the `.astro` or `.md` formats allows me to type either way, depending on the necessities. Three, the use of nice code blocks, using the "Shiki" plugin built into Astro, makes the code look pretty.
+
+**Example**
+```python
+print("This is a basic code block")
+
+print("But it looks so good!")
+```
+
+## So, What Can You Expect?
+This blog will discuss my projects; relating to coding, cybersecurity, and computer technology in general. I'll discuss my learning of these topics as well. Discussions can also range on opinions on technology as well, but the main focus is on projects and learning discussion. 
+
+This is just a place to publish my projects and working learning to show progess. 
+
+## [Next Post: ->](/blog/learn-rust)
+
+## [<- Back to Directory](/directory)

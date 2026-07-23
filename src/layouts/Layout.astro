@@ -1,0 +1,28 @@
+---
+import '../styles/global.css';
+
+interface Props {
+  title?: string;
+}
+
+const { title = "wm0026's blog" } = Astro.props;
+---
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>{title}</title>
+  </head>
+  <body>
+    <div class="header">
+      <h1> The Blog Zone</h1>
+      <p>A blog by wm00026</p>
+      <a href="https://github.com/wm00026">Github</a>
+    </div>
+    <div class="main">
+      <slot />
+    </div>
+  </body>
+</html>

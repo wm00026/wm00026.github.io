@@ -1,0 +1,36 @@
+---
+import Layout from '../layouts/Layout.astro';
+
+// The type parameter tells TS what each matched module looks like —
+// without it, every module comes back as `unknown` and property access
+// (post.frontmatter, post.url) fails type-checking.
+interface Post {
+  frontmatter: { title: string };
+  url: string;
+}
+
+// Grabs every .md file in src/pages/blog/, eager: true means the content
+// is loaded immediately (not lazy-loaded), so we can read frontmatter now.
+const postModules = import.meta.glob<Post>('./blog/*.md', { eager: true });
+
+// Each entry is keyed by file path and gives you `frontmatter` + `url`.
+const posts = Object.values(postModules).sort(
+  (a, b) => a.frontmatter.title.localeCompare(b.frontmatter.title)
+);
+---
+
+<Layout title="Blog Directory">
+  <h1>Navigating Pages</h1>
+
+  <p style="font-weight: bold;">Here you can navigate to different pages.</p>
+
+  <h2>Blog Posts</h2>
+  <ol>
+    {posts.map((post) => (
+      <li style="font-size:large"><a href={post.url}>{post.frontmatter.title}</a></li>
+    ))}
+  </ol>
+
+  <h2><a href="/">← Back to home</a></h2>
+
+</Layout>

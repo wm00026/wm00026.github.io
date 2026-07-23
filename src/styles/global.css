@@ -1,0 +1,100 @@
+body {
+  margin: 0;
+  background-color: #12161c;
+  background-image:
+    linear-gradient(rgba(18, 22, 28, 0.94), rgba(18, 22, 28, 0.94)),
+    linear-gradient(#2a3240 1px, transparent 1px),
+    linear-gradient(90deg, #2a3240 1px, transparent 1px);
+  background-size: auto, 40px 40px, 40px 40px;
+  background-attachment: fixed;
+}
+
+.header {
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  padding: 5px;
+  text-align: center;
+  background: rgba(0, 0, 0, 0.5);
+  color: white;
+  font-size: 16px;
+  border: 2px solid black;
+}
+
+.main {
+  padding: 5px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  color: #e6e9ef;
+}
+
+.main h1 {
+  text-align: center;
+  color: #f2a65a;
+}
+
+.main h2,
+.main h3,
+.main h4 {
+  font-style: italic;
+  color: #7fb3c9;
+}
+
+/* --- Code blocks ---
+   Shiki (Astro's built-in highlighter) renders <pre class="astro-code">
+   with its own inline background/text colors from the "tokyo-night"
+   theme set in astro.config.mjs. We just style the container around it
+   the same way your old .code-block did — the terminal dots, border,
+   radius, shadow, scrollbar — and let Shiki handle the token colors. */
+
+pre.astro-code {
+  position: relative;
+  font-family: "Fira Code", "Consolas", monospace;
+  font-size: 0.85rem;
+  line-height: 1.6;
+  padding: 2rem 1rem 1rem;
+  margin: 1rem 0;
+  border-radius: 10px;
+  overflow-x: auto;
+  border: 1px solid #2b2f3f;
+  box-shadow:
+    0 4px 12px rgba(0, 0, 0, 0.35),
+    inset 0 0 0 1px rgba(255, 255, 255, 0.02);
+  width: max-content;
+  max-width: 100%;
+}
+
+/* terminal-style dots in the top-left corner, same as before */
+pre.astro-code::before {
+  content: "";
+  position: absolute;
+  top: 0.75rem;
+  left: 1rem;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: #f7768e;
+  box-shadow:
+    18px 0 0 #e0af68,
+    36px 0 0 #9ece6a;
+}
+
+pre.astro-code::-webkit-scrollbar {
+  height: 8px;
+}
+
+pre.astro-code::-webkit-scrollbar-track {
+  background: #16171f;
+  border-radius: 10px;
+}
+
+pre.astro-code::-webkit-scrollbar-thumb {
+  background: #414868;
+  border-radius: 10px;
+}
+
+pre.astro-code::-webkit-scrollbar-thumb:hover {
+  background: #565f89;
+}
+
+pre.astro-code ::selection {
+  background: #364a82;
+  color: #fff;
+}
