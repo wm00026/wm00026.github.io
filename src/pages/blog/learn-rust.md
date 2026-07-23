@@ -32,7 +32,7 @@ My methodology for learning Rust is something that I've wanted to focus on the m
 
 To take notes, I've been using Obsidian. It's a note taking and "personal knowledge base" software that uses markdown files. It's similar to software like Notion, but it's open source. I've mainly wanted to focus on structuring my notes, actually learning how to take notes rather than just copy down the words from The Book.
 
-<img src="/public/pictures/obsidian-screenshot.png" width="750" alt="Picture of my Rust notes in Obsidian">
+<img src="/pictures/obsidian-screenshot.png" width="750" alt="Picture of my Rust notes in Obsidian">
 
 *A picture of my Obsidian notes page.*
 
