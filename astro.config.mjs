@@ -1,7 +1,7 @@
 import { defineConfig } from 'astro/config';
 
 export default defineConfig({
-  site: 'https://flak.github.io',
+  site: 'https://wm00026.github.io',
   markdown: {
     shikiConfig: {
       // Tokyo Night is a built-in Shiki theme — it's actually the same

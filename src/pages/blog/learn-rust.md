@@ -5,6 +5,8 @@ title: My Experience with Learning Rust
 ---
 # My Experience with Learning Rust (so far)
 
+***Date: 23 July 2026***
+
 I've recently began trying to learn Rust, one of the "systems languages" that has become increasingly more popular over time. Along with some basic working knowledge of the **C Programming language**, I wanted to learn Rust for a few reasons.
 
 1. Rust is "generally" more safe on memory than C, due to the virtue of Ownership compared to general memory allocation that C uses. So Rust doesn't have as many issues with buffer overflow and other memory issues that C has. 
@@ -41,6 +43,8 @@ This part is a work in progres, so there isn't much to add here. After I am fami
 
 Using these materials, I hope that the program building progress will be as "simple" as possible. 
 
-## [<- Back to Directory](/directory)
+## [<-- Last Post](/blog/first-post)
 
-## [Next Post ->](/blog/)
+## [Next Post -->](/blog/)
+
+## [<-- Back to Directory](/directory)

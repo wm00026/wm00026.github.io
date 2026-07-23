@@ -28,6 +28,6 @@ This blog will discuss my projects; relating to coding, cybersecurity, and compu
 
 This is just a place to publish my projects and working learning to show progess. 
 
-## [Next Post: ->](/blog/learn-rust)
+## [Next Post: -->](/blog/learn-rust)
 
-## [<- Back to Directory](/directory)
+## [<-- Back to Directory](/directory)
