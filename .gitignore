@@ -1,5 +1,6 @@
 # .gitignore for GitHub Pages
 dist/
 node_modules/
+.astro/
 .DS_Store
 UsingBlog.md
