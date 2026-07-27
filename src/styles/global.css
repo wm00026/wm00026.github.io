@@ -37,13 +37,6 @@ body {
   color: #7fb3c9;
 }
 
-/* --- Code blocks ---
-   Shiki (Astro's built-in highlighter) renders <pre class="astro-code">
-   with its own inline background/text colors from the "tokyo-night"
-   theme set in astro.config.mjs. We just style the container around it
-   the same way your old .code-block did — the terminal dots, border,
-   radius, shadow, scrollbar — and let Shiki handle the token colors. */
-
 pre.astro-code {
   position: relative;
   font-family: "Fira Code", "Consolas", monospace;
@@ -61,7 +54,6 @@ pre.astro-code {
   max-width: 100%;
 }
 
-/* terminal-style dots in the top-left corner, same as before */
 pre.astro-code::before {
   content: "";
   position: absolute;
